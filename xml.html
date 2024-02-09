@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre XML</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que la ruta al archivo CSS sea correcta -->
+</head>
+<body>
+
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Blog de Programación</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="xml.html">XML <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="json.html">JSON</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <div class="row">
+        <!-- Barra Lateral -->
+        <div class="col-md-4">
+            <!-- Categorías -->
+            <div class="list-group mb-4">
+                <a href="#" class="list-group-item list-group-item-action active">Categorías</a>
+                <a href="xml.html" class="list-group-item list-group-item-action">XML</a>
+                <a href="json.html" class="list-group-item list-group-item-action">JSON</a>
+            </div>
+
+            <!-- Últimos Posts -->
+            <div class="mb-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Últimos Posts</a>
+                    <a href="https://www.xataka.com/perifericos/me-he-pasado-a-teclados-mecanicos-no-hay-vuelta-atras-ahora-entiendo-a-sus-entusiastas-1" class="list-group-item list-group-item-action">Me he pasado a los teclados mecánicos y ya no hay vuelta atrás: ahora entiendo a sus entusiastas</a>
+                    <a href="https://www.xataka.com/tablets/derrumbe-mercado-tablets-nos-deja-realidad-era-post-pc-era-falacia" class="list-group-item list-group-item-action">El derrumbe del mercado de las tablets nos deja una realidad: la era post-PC era una falacia</a>
+                    <a href="https://www.xataka.com/empresas-y-economia/intel-pelea-tu-a-tu-tsmc-fabricara-soc-arm-neoverse-1-8-nm-64-nucleos-para-faraday" class="list-group-item list-group-item-action">Intel ya pelea de tú a tú con TSMC: fabricará el SoC ARM Neoverse de 1,8 nm y 64 núcleos para Faraday</a>
+                    <!-- Agrega más posts según sea necesario -->
+                </div>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Síguenos</a>
+                    <a href="https://twitter.com" class="list-group-item list-group-item-action">Twitter</a>
+                    <a href="https://facebook.com" class="list-group-item list-group-item-action">Facebook</a>
+                    <a href="https://instagram.com" class="list-group-item list-group-item-action">Instagram</a>
+                    <!-- Agrega más enlaces a redes sociales según sea necesario -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="col-md-8">
+            <h1>XML - Extensible Markup Language</h1>
+            <p>XML (eXtensible Markup Language) es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos de manera que sea tanto legible para humanos como para máquinas. Desarrollado por el World Wide Web Consortium (W3C) y lanzado por primera vez en 1998, XML es un metalenguaje que permite a los usuarios definir sus propias etiquetas y la estructura del documento. Esta flexibilidad hace que XML sea extremadamente útil para compartir información estructurada a través de Internet, así como para almacenar y transportar datos en una amplia gama de aplicaciones.
+
+                XML está diseñado para ser auto-descriptivo y utiliza una sintaxis similar a HTML, con la diferencia clave de que en XML, las etiquetas son definidas por el desarrollador. Esto significa que, mientras que HTML se centra en la presentación de datos, XML se enfoca en describir y transportar datos. Los documentos XML se componen de elementos delimitados por etiquetas, que pueden contener atributos y elementos anidados, lo que permite representar estructuras de datos complejas.
+                
+                Además de su uso en la transferencia de datos y la configuración de aplicaciones, XML es fundamental en una variedad de tecnologías basadas en XML, como XSLT (para transformaciones de documentos XML), XPath (para la navegación en documentos XML), y SOAP (un protocolo para el intercambio de información estructurada en la implementación de servicios web).
+                
+                Una de las características más importantes de XML es su capacidad para trabajar bien con otros estándares y tecnologías, lo que facilita la integración y el intercambio de datos entre sistemas diferentes. Esto lo hace invaluable en muchos contextos, especialmente en el desarrollo web, sistemas de información geográfica, comunicación entre empresas y muchos otros campos donde el intercambio de datos estructurados es crucial.</p>
+            
+            <h2>Historia y Desarrollo</h2>
+            <p>La historia y el desarrollo de XML (eXtensible Markup Language) están profundamente arraigados en la evolución de las tecnologías de marcado y la necesidad de compartir datos estructurados a través de Internet de manera eficiente y estandarizada. Aquí hay un resumen cronológico de los eventos clave en la historia y el desarrollo de XML:
+
+                Orígenes y Precursores
+                Décadas de 1960-1980: El concepto de lenguajes de marcado se remonta a los desarrollos de SGML (Standard Generalized Markup Language) en los años 60 y 70. SGML, estandarizado en 1986, es un metalenguaje que define la estructura de documentos de marcado y es utilizado en grandes proyectos de documentación, como manuales técnicos y bibliotecas digitales.
+                Surgimiento de XML
+                1996: El desarrollo de XML comenzó en 1996 bajo el liderazgo de Jon Bosak de Sun Microsystems, dentro del W3C (World Wide Web Consortium). La motivación principal era crear un formato más sencillo y flexible que SGML, adecuado para el uso en la web, que pudiera ser fácilmente procesado por las máquinas y legible por humanos.
+                
+                Febrero de 1998: El W3C publicó la primera recomendación oficial de XML 1.0. Esta versión estableció las bases del lenguaje, definiendo su sintaxis, estructura y reglas de procesamiento.
+                
+                Desarrollos Posteriores y Ecosistema XML
+                1999 y más allá: Tras la publicación inicial de XML, se desarrollaron numerosas especificaciones complementarias y tecnologías basadas en XML para abordar diferentes aspectos del procesamiento, la transformación, la validación y la consulta de documentos XML. Algunas de estas tecnologías incluyen:
+                
+                XPath: Lenguaje para navegar por los elementos y atributos en un documento XML.
+                XSLT: Lenguaje para transformar documentos XML en otros formatos como HTML, texto o incluso nuevos documentos XML.
+                XML Schema: Define la estructura y restringe el contenido de los documentos XML, proporcionando una manera de validarlos.
+                Adopción y Uso: XML se ha adoptado ampliamente en una variedad de campos y aplicaciones, desde servicios web, intercambio de datos empresariales, configuraciones de software, hasta aplicaciones en la industria editorial y más.
+                
+                Actualizaciones de la Especificación
+                Desde 1998: XML ha visto varias actualizaciones y revisiones, con la versión XML 1.1 publicada en 2004, introduciendo cambios menores para abordar problemas específicos de la versión 1.0, como el manejo de caracteres y la identificación de IDs.
+                Impacto y Legado
+                El impacto de XML ha sido significativo en la estandarización de la forma en que los datos estructurados son compartidos y procesados en la web y en sistemas de información. Aunque en algunos contextos ha sido reemplazado o complementado por JSON, especialmente en aplicaciones web debido a su simplicidad y eficiencia en el manejo con JavaScript, XML sigue siendo fundamental en muchos sistemas que requieren una descripción detallada de los datos y en entornos donde la validación y la transformación de documentos son cruciales.
+                La historia de XML refleja la evolución de la web desde una plataforma principalmente para documentos estáticos a un medio rico y dinámico para el intercambio complejo de datos y la integración de aplicaciones. Su desarrollo ha sido un esfuerzo colaborativo que ha involucrado a muchas personas y organizaciones, y su legado continúa en las numerosas tecnologías y estándares que lo han adoptado o se han inspirado en él.</p>
+            
+            <h2>Características de XML</h2>
+            <p>XML (eXtensible Markup Language) es un lenguaje de marcado flexible y potente diseñado para estructurar, almacenar y transportar datos. Aquí están algunas de las características clave de XML:
+
+                Extensibilidad: Uno de los aspectos más destacados de XML es su extensibilidad. Los usuarios pueden definir sus propias etiquetas y estructuras de documentos según las necesidades específicas de su aplicación, lo que lo hace adecuado para una amplia gama de casos de uso en diferentes industrias.
+                
+                Autodescriptivo: Los documentos XML son autodescriptivos; las etiquetas pueden ser descriptivas respecto al tipo de datos que contienen (por ejemplo, <nombre>, <precio>), lo que hace que el documento sea fácil de entender tanto para humanos como para máquinas.
+                
+                Estandarizado: XML es un estándar del W3C (World Wide Web Consortium), lo que asegura su compatibilidad y adopción generalizadas a través de diferentes plataformas y tecnologías.
+                
+                Estructura jerárquica: Los datos en XML se organizan de manera jerárquica y pueden contener subelementos anidados, lo que permite representar relaciones complejas dentro de los datos.
+                
+                Separación de contenido y presentación: XML se enfoca en el transporte y almacenamiento de datos, y su presentación puede ser manejada por otras tecnologías como XSLT (eXtensible Stylesheet Language Transformations), permitiendo una clara separación entre el contenido y la forma en que se muestra.
+                
+                Soporte para espacios de nombres: XML permite el uso de espacios de nombres, lo que ayuda a evitar conflictos de nombres en documentos que combinan marcas de diferentes vocabularios XML.
+                
+                Transporte a través de Internet: XML es ampliamente utilizado para el intercambio de datos a través de Internet, especialmente en servicios web y APIs, debido a su capacidad para representar estructuras de datos complejas de manera clara y estructurada.
+                
+                Internacionalización: XML soporta Unicode, permitiendo la representación de texto en prácticamente cualquier idioma del mundo, lo que lo hace adecuado para aplicaciones internacionales.
+                
+                Validación de documentos: Los documentos XML pueden ser validados contra DTD (Document Type Definition) o esquemas XML para asegurar que la estructura y el contenido del documento cumplen con una definición específica, lo que aumenta la confiabilidad de los datos intercambiados.
+                
+                Interoperabilidad: Debido a su estandarización y estructura bien definida, XML facilita la interoperabilidad entre diferentes sistemas y aplicaciones, lo que permite una fácil integración y el intercambio de datos.
+                
+                Estas características hacen de XML una herramienta poderosa y versátil para el modelado de datos, especialmente en entornos donde la precisión, la claridad y la interoperabilidad son fundamentales.</p>
+            
+            <!-- Continúa con más contenido relevante sobre XML -->
+        </div>
+    </div>
+</div>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

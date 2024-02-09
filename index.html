@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Programación</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Aquí puedes añadir tus estilos personalizados */
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Blog de Programación</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="xml.html">XML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="json.html">JSON</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="row mt-3" id="inicio">
+        <!-- Columna Lateral -->
+        <div class="col-md-4">
+            <!-- Categorías -->
+            <div class="list-group mb-4">
+                <a href="#" class="list-group-item list-group-item-action active">Categorías</a>
+                <a href="xml.html" class="list-group-item list-group-item-action">XML</a>
+                <a href="json.html" class="list-group-item list-group-item-action">JSON</a>
+            </div>
+
+            <!-- Últimos Posts -->
+            <div class="mb-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Últimos Posts</a>
+                    <a href="https://www.xataka.com/perifericos/me-he-pasado-a-teclados-mecanicos-no-hay-vuelta-atras-ahora-entiendo-a-sus-entusiastas-1" class="list-group-item list-group-item-action">Me he pasado a los teclados mecánicos y ya no hay vuelta atrás: ahora entiendo a sus entusiastas</a>
+                    <a href="https://www.xataka.com/tablets/derrumbe-mercado-tablets-nos-deja-realidad-era-post-pc-era-falacia" class="list-group-item list-group-item-action">El derrumbe del mercado de las tablets nos deja una realidad: la era post-PC era una falacia</a>
+                    <a href="https://www.xataka.com/empresas-y-economia/intel-pelea-tu-a-tu-tsmc-fabricara-soc-arm-neoverse-1-8-nm-64-nucleos-para-faraday" class="list-group-item list-group-item-action">Intel ya pelea de tú a tú con TSMC: fabricará el SoC ARM Neoverse de 1,8 nm y 64 núcleos para Faraday</a>
+                    <!-- Agrega más posts según sea necesario -->
+                </div>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Síguenos</a>
+                    <a href="https://twitter.com" class="list-group-item list-group-item-action">Twitter</a>
+                    <a href="https://facebook.com" class="list-group-item list-group-item-action">Facebook</a>
+                    <a href="https://instagram.com" class="list-group-item list-group-item-action">Instagram</a>
+                    <!-- Agrega más enlaces a redes sociales según sea necesario -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Artículos y Publicaciones con Fotos -->
+        <div class="col-md-8">
+            <!-- Pestañas para Artículos -->
+            <div class="card mb-3" id="introduccion-xml">
+                <div class="card-body">
+                    <h5 class="card-title">Introducción a XML</h5>
+                    <p class="card-text">XML (eXtensible Markup Language) es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos de manera que sea tanto legible para humanos como para máquinas. Desarrollado por el World Wide Web Consortium (W3C) y lanzado por primera vez en 1998, XML es un metalenguaje que permite a los usuarios definir sus propias etiquetas y la estructura del documento..</p>
+                    <a href="xml.html" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            <div class="card mb-3" id="introduccion-json">
+                <div class="card-body">
+                    <h5 class="card-title">Introducción a JSON</h5>
+                    <p class="card-text">JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos, fácil de leer y escribir para humanos, y fácil de parsear y generar para las máquinas. Desarrollado inicialmente como una notación para objetos en JavaScript, JSON se ha convertido en un formato de texto independiente del lenguaje, ampliamente utilizado para el intercambio de datos en la web y en aplicaciones móviles.</p>
+                    <a href="json.html" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+
+            <!-- Publicaciones con Fotos -->
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.blogs.es/e3f736/tecladomecanico-ap/1366_2000.jpeg" class="card-img-top" alt="Descripción de la imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Teclados mecánicos: un cambio sin retorno</h5>
+                            <p class="card-text">Mi rutina diaria ha atravesado un antes y un después...</p>
+                            <a href="https://www.xataka.com/perifericos/me-he-pasado-a-teclados-mecanicos-no-hay-vuelta-atras-ahora-entiendo-a-sus-entusiastas-1" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.blogs.es/bdb04b/ipad3/1200_800.jpeg" class="card-img-top" alt="Descripción de la imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">El derrumbe del mercado de las tablets</h5>
+                            <p class="card-text">En 2023 se vendieron un 20% menos de tabletas...</p>
+                            <a href="https://www.xataka.com/tablets/derrumbe-mercado-tablets-nos-deja-realidad-era-post-pc-era-falacia" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.blogs.es/1e2d97/intel-ap/1200_800.jpeg" class="card-img-top" alt="Descripción de la imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Intel y su competencia con TSMC</h5>
+                            <p class="card-text">Intel aspira a consolidarse como el segundo mayor fabricante...</p>
+                            <a href="https://www.xataka.com/empresas-y-economia/intel-pelea-tu-a-tu-tsmc-fabricara-soc-arm-neoverse-1-8-nm-64-nucleos-para-faraday" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

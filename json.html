@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre JSON</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que la ruta al archivo CSS sea correcta -->
+</head>
+<body>
+
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Blog de Programación</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="xml.html">XML</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="json.html">JSON <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <div class="row">
+        <!-- Barra Lateral -->
+        <div class="col-md-4">
+            <!-- Categorías -->
+            <div class="list-group mb-4">
+                <a href="#" class="list-group-item list-group-item-action active">Categorías</a>
+                <a href="xml.html" class="list-group-item list-group-item-action">XML</a>
+                <a href="json.html" class="list-group-item list-group-item-action">JSON</a>
+            </div>
+
+            <!-- Últimos Posts -->
+            <div class="mb-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Últimos Posts</a>
+                    <a href="https://www.xataka.com/perifericos/me-he-pasado-a-teclados-mecanicos-no-hay-vuelta-atras-ahora-entiendo-a-sus-entusiastas-1" class="list-group-item list-group-item-action">Me he pasado a los teclados mecánicos y ya no hay vuelta atrás: ahora entiendo a sus entusiastas</a>
+                    <a href="https://www.xataka.com/tablets/derrumbe-mercado-tablets-nos-deja-realidad-era-post-pc-era-falacia" class="list-group-item list-group-item-action">El derrumbe del mercado de las tablets nos deja una realidad: la era post-PC era una falacia</a>
+                    <a href="https://www.xataka.com/empresas-y-economia/intel-pelea-tu-a-tu-tsmc-fabricara-soc-arm-neoverse-1-8-nm-64-nucleos-para-faraday" class="list-group-item list-group-item-action">Intel ya pelea de tú a tú con TSMC: fabricará el SoC ARM Neoverse de 1,8 nm y 64 núcleos para Faraday</a>
+                    <!-- Agrega más posts según sea necesario -->
+                </div>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Síguenos</a>
+                    <a href="https://twitter.com" class="list-group-item list-group-item-action">Twitter</a>
+                    <a href="https://facebook.com" class="list-group-item list-group-item-action">Facebook</a>
+                    <a href="https://instagram.com" class="list-group-item list-group-item-action">Instagram</a>
+                    <!-- Agrega más enlaces a redes sociales según sea necesario -->
+                </div>
+            </div>
+        </div>
+        <!-- Contenido Principal -->
+        <div class="col-md-8">
+            <h1>JSON - JavaScript Object Notation</h1>
+            <p>JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos, fácil de leer y escribir para humanos, y fácil de parsear y generar para las máquinas. Desarrollado inicialmente como una notación para objetos en JavaScript, JSON se ha convertido en un formato de texto independiente del lenguaje, ampliamente utilizado para el intercambio de datos en la web y en aplicaciones móviles.
+
+                JSON está estructurado como una colección de pares nombre/valor, que en los lenguajes de programación se reconocen como un objeto, registro, estructura, diccionario, tabla hash, lista clave o un array asociativo. Además, JSON puede representar cuatro tipos primitivos (cadenas, números, booleanos y null) y dos tipos estructurados: objetos y arrays.
+                
+                Objetos JSON: Se delimitan con llaves ({}) y contienen una lista de pares nombre/valor, donde el nombre (o clave) es un string y el valor puede ser cualquier tipo de dato JSON. Cada par nombre/valor está separado por comas.
+                
+                Arrays JSON: Se delimitan con corchetes ([]) y contienen una lista de valores, que pueden ser de cualquier tipo de dato JSON. Los valores en el array están separados por comas.
+                
+                La simplicidad y efectividad de JSON para representar estructuras de datos, junto con su fácil manipulación en JavaScript, han hecho que sea ampliamente adoptado para el intercambio de datos en servicios web y APIs, superando a otros formatos como XML en muchos casos por su menor verbosidad y mayor rapidez en el procesamiento.
+                
+                JSON se utiliza en una amplia gama de aplicaciones, desde la configuración de software y la comunicación entre el servidor y el navegador en aplicaciones web, hasta el almacenamiento de datos y la configuración en aplicaciones móviles y de escritorio. Su capacidad para trabajar bien con muchos lenguajes de programación y su estructura fácil de entender lo hacen ideal para la transmisión de datos estructurados a través de la red y para el almacenamiento de datos en un formato legible.</p>
+            
+            <h2>Historia y Desarrollo</h2>
+            <p>La historia y el desarrollo de JSON (JavaScript Object Notation) se relacionan estrechamente con la evolución de JavaScript y el creciente uso de la web para aplicaciones interactivas y el intercambio de datos. A diferencia de XML, JSON nació específicamente del contexto de la programación web y se ha convertido en un estándar de facto para el intercambio de datos debido a su simplicidad y eficiencia. A continuación, se detalla una cronología de los eventos clave en la historia y el desarrollo de JSON:
+
+                Orígenes
+                Años 90: JSON se origina en la sintaxis de objetos literales de JavaScript, que fue desarrollada por Netscape Communications. JavaScript fue creado por Brendan Eich en 1995 y se convirtió rápidamente en un componente fundamental de la web para agregar interactividad a las páginas web.
+                Formalización y Adopción
+                2001: JSON fue formalmente introducido y popularizado por Douglas Crockford, quien fue clave en la especificación de JSON y su promoción como formato de intercambio de datos. Crockford descubrió que el formato de objeto literal de JavaScript podía usarse para transmitir datos de manera eficiente entre un servidor y un navegador web, y comenzó a usarlo en sus propios proyectos.
+                
+                2002: Crockford lanzó el sitio web JSON.org, donde documentó el estándar y proporcionó recursos para los desarrolladores, incluidas las bibliotecas para analizar y generar JSON en varios lenguajes de programación.
+                
+                Estandarización
+                Diciembre de 2005: JSON fue oficialmente reconocido como un formato de texto independiente de cualquier lenguaje de programación, lo que facilitó su adopción en muchas tecnologías y plataformas. La especificación de JSON se publicó en el RFC 4627 por la Internet Engineering Task Force (IETF).
+                
+                2006 en adelante: Con la creciente popularidad de las aplicaciones web y AJAX (Asynchronous JavaScript and XML), JSON comenzó a ser ampliamente adoptado como un medio eficiente para la comunicación asíncrona entre el cliente y el servidor, ofreciendo una alternativa más ligera a XML.
+                
+                Consolidación y Uso Generalizado
+                2013: La especificación de JSON fue definida en el ECMA-404 por Ecma International, lo que proporcionó una base normativa formal para el formato.
+                
+                2017: El RFC 8259 fue publicado por la IETF, actualizando y clarificando la definición de JSON, y estableciéndolo oficialmente como un estándar de Internet.
+                
+                Impacto y Uso Actual
+                Hoy en día, JSON es ampliamente utilizado en la web para APIs, configuraciones, archivos de datos y como formato de intercambio de datos entre diferentes lenguajes de programación. Su simplicidad, legibilidad y facilidad de uso en JavaScript lo han convertido en el formato preferido para muchos desarrolladores, superando a XML en muchos casos de uso de la web moderna.
+                La historia de JSON destaca cómo una solución simple y práctica, diseñada para satisfacer las necesidades inmediatas de la programación web, puede evolucionar para convertirse en un estándar global utilizado en una vasta gama de aplicaciones y tecnologías.</p>
+            
+            <h2>Características de XML</h2>
+            <p>JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos que se ha popularizado por su simplicidad, eficiencia y facilidad de uso, especialmente en el desarrollo web. A continuación, se describen algunas de las principales características de JSON:
+
+                Basado en texto: JSON es un formato de texto, lo que facilita su lectura y escritura tanto por humanos como por máquinas. Esto también permite que JSON sea transmitido fácilmente a través de redes y utilizado como formato de intercambio de datos en diversas plataformas tecnológicas.
+                
+                Ligero: Comparado con otros formatos de intercambio de datos como XML, JSON es menos verboso, lo que resulta en un menor tamaño de los mensajes transmitidos. Esto lo hace particularmente útil para aplicaciones web y móviles donde la eficiencia en la transmisión de datos es crítica.
+                
+                Estructura de datos estándar: JSON utiliza estructuras de datos familiares para los programadores, incluyendo objetos (colecciones desordenadas de pares nombre/valor) y arrays (listas ordenadas de valores). Estas estructuras son comunes en muchos lenguajes de programación, lo que hace que JSON sea muy intuitivo y fácil de trabajar.
+                
+                Independiente del lenguaje: Aunque JSON se originó de JavaScript, se ha convertido en un formato independiente del lenguaje, con bibliotecas disponibles para analizar y generar JSON en prácticamente todos los lenguajes de programación modernos. Esto facilita su uso en una amplia variedad de aplicaciones y entornos de desarrollo.
+                
+                Facilidad de uso con JavaScript: Dado que JSON es un subconjunto de la sintaxis de objeto literal en JavaScript, los objetos JSON pueden ser utilizados directamente en JavaScript sin necesidad de análisis o serialización, lo que simplifica el desarrollo de aplicaciones web que utilizan JavaScript.
+                
+                Soporte para tipos de datos básicos: JSON soporta tipos de datos básicos como números, cadenas (strings), booleanos (true/false) y valores nulos (null), lo que lo hace adecuado para representar una amplia gama de estructuras de datos.
+                
+                Uso en APIs y servicios web: JSON se ha convertido en el formato preferido para el intercambio de datos en muchas APIs y servicios web debido a su simplicidad y eficiencia, facilitando la integración y el desarrollo de aplicaciones basadas en servicios web.
+                
+                Facilidad para la manipulación de datos: Los datos en formato JSON pueden ser fácilmente manipulados, almacenados y recuperados, lo que lo hace ideal para configuraciones, opciones y almacenamiento de datos en aplicaciones.
+                
+                Interoperabilidad: Al ser un formato de texto simple y estandarizado, JSON facilita la interoperabilidad entre sistemas heterogéneos y plataformas de desarrollo diferentes, permitiendo una integración fluida y el intercambio de datos.
+                
+                Estas características hacen de JSON una opción atractiva para el intercambio de datos en la web, aplicaciones móviles y sistemas distribuidos, especialmente en entornos donde la eficiencia de la transmisión y la facilidad de uso son prioridades clave.</p>
+            <!-- Continúa con más contenido relevante sobre JSON -->
+        </div>
+    </div>
+</div>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

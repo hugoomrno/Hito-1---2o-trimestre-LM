@@ -1,0 +1,13 @@
+/* Contenido de styles.css */
+
+/* Estilos personalizados para el formulario de contacto */
+.contact-form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
